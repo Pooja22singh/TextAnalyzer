@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Real-time text analysis with web worker</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header><h1>Text analyzer</h1></header>
+    <main>
+        <section> <textarea id="text" rows="10" cols="150" placeholder="Start writing..."></textarea>
+        </section>
+        <section id="description">
+            <p>Word count: <span id="wordCount">0</span></p>
+            <p>Character count: <span id="charCount">0</span></p>
+            <p>Line count: <span id="lineCount">0</span></p>
+            <p>Most repeated word: <span id="mostRepeatedWord">N/A</span> (<span id="mostRepeatedWordCount">N/A</span>
+                occurrences)</p>
+        </section>
+    </main>
+</body>
+
+</html>
