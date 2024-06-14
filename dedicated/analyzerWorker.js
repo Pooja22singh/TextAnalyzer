@@ -3,11 +3,13 @@
 
 self.addEventListener("message", (event) => {
     if (typeof event.data == "string") {
-        postMessage(analyse(event.data));
+         postMessage(analyse(event.data));
+         console.log("gelllooooo");
     } else {
         throw new Error("Can not analyse non-string data")
     }
-})
+});
+
 const countWords = (input) => {
     // \s: This is a shorthand character class in regular expressions that matches any
     //  whitespace character. Whitespace characters include spaces, tabs, form feeds,
